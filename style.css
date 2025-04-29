@@ -1,0 +1,40 @@
+.cart-grid {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .cart-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  }
+  
+  .cart-summary {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .cart-summary button {
+    padding: 10px 20px;
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .cart-summary button:hover {
+    background: #218838;
+  }
+  .buy-button {
+    background: #0070ba; /* PayPal blue */
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .buy-button:hover {
+    background: #005c99;
+  }
+  

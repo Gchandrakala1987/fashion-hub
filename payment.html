@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Payment - Fashion Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Payment</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <main class="payment-section" style="text-align: center; padding: 50px;">
+    <h2>Complete Your Purchase</h2>
+    <p>Click the button below to proceed to secure payment.</p>
+
+    <!-- PayPal Buy Now Button -->
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+      <input type="hidden" name="cmd" value="_xclick">
+      <input type="hidden" name="business" value="your-paypal-email@example.com"> <!-- Change this -->
+      <input type="hidden" name="item_name" value="Fashion Hub Order">
+      <input type="hidden" name="amount" value="500"> <!-- Update dynamically later if needed -->
+      <input type="hidden" name="currency_code" value="INR">
+
+      <input type="submit" value="Pay Now with PayPal" class="buy-button">
+    </form>
+
+    <p style="margin-top: 20px;">After payment, we'll send you a confirmation email!</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Fashion Hub. All rights reserved.</p>
+  </footer>
+</body>
+</html>
